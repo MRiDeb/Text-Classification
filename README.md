@@ -10,31 +10,36 @@ With publicly available medical transcription data, the goal is to classify the 
 
 ## Exploratory Data Analysis (EDA):
 
-Data Cleaning:
+
+
+
+
+### Data Cleaning:
 For this project, only the transcription and medical_specialty columns are retained. All other columns are removed. The dataset contains 33 missing values in the medical_specialty column, which have been filled with the label 'unknown'.
 
-Text Preprocessing:
-Initial steps included lowercasing, removal of punctuation, and elimination of stop words. Tokenization and lemmatization are planned, but implementation is currently pending due to issues with the Punkt tokenizer download. This is being addressed.
+### Data Visualization
 
-Data Visualization:
+Visualize the distribution of specialties. From this graph, it is clear that some specialties have very limited data while others have significantly more. The data is not evenly distributed. Techniques like oversampling or undersampling may be applied based on these findings.
 
-Distribution of Medical Specialties: Helps detect class imbalance. Techniques like oversampling or undersampling may be applied based on these findings.
+![image](https://github.com/user-attachments/assets/a706adf0-48e3-4341-90cd-f37ef5814762)
 
-Transcription Length by Specialty: Identifies which specialties tend to generate longer or more detailed notes, informing preprocessing and model input strategy.
+### Text Preprocessing:
+Initial steps included lowercasing, removal of punctuation, and elimination of stop words. Tokenization and lemmatization have been successfully implemented using the Punkt tokenizer.
 
-Top TF-IDF Terms per Specialty: Highlights key terms relevant to each specialty for improved feature extraction.
+### Feature Extraction
+Convert text into numerical format using TF-IDF Vectorization.
 
-Top 10 Most Common Words per Specialty: Assists in identifying specialty-specific vocabulary.
+### Baseline Model
+Using Logistic Regression as baseline model, we see that accuracry is at 30%
 
-Word Cloud of Transcriptions: Provides a visual summary of frequently occurring terms across all specialties.
+### Advanced Models to boost accuracy
 
-Top 10 Most Frequent Words by Specialty: Reveals patterns in language use unique to each specialty, aiding model accuracy.
+Naive Bayes
 
-Feature Engineering:
+Random Forest
 
-Extract specialty-specific terms using Clinical BERT embeddings.
+XGBoost
 
-Apply Named Entity Recognition (NER) to identify and remove sensitive or irrelevant entities such as patient age and sex from the transcriptions.
+BERT with HuggingFace Transformers -  This is failing, may need help with this. 
 
-Initial Modeling:
-A preliminary model using the Multinomial Naive Bayes classifier was trained, achieving an accuracy of approximately 37%. Further tuning and exploration of more advanced models are planned in the next development phase.
+We'll also compare results using accuracy, F1-score, precision, and recall.
