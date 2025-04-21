@@ -1,24 +1,14 @@
 # Text Classification - Text Classification capstone project
 
-Project Goal:
-The primary objective of this project is to develop a machine learning model capable of accurately predicting the medical specialty associated with a given medical transcription. 
+## Project Goal:
 
-Classifier Models Under Consideration:
+The primary objective of this project is to develop a machine learning model capable of accurately predicting the medical specialty associated with a given medical transcription. While a publicly available dataset is being used for initial development and learning the process, the final models will be applied to classified company data that cannot be publicly shared. This ensures privacy compliance while supporting internal implementation. 
 
-Logistic Regression
+## Business Objective:
 
-Multinomial Naive Bayes
+With publicly available medical transcription data, the goal is to classify the medical specialty based on the content of the transcription. This allows for safe experimentation and development of NLP techniques, helping to refine the classification pipeline and model performance in a non-sensitive setting.
 
-Support Vector Machine (SVM)
-
-Random Forest
-
-Transformer-based models (e.g., BERT)
-
-Business Objective:
-The goal from a business perspective is to automate the classification of medical specialties based on transcription content. This automation improves clinical workflow efficiency, facilitates better care coordination by routing information to the appropriate specialists, and enables more effective resource allocation and operational planning. Ultimately, it contributes to improved patient outcomes and a reduced administrative workload.
-
-Exploratory Data Analysis (EDA):
+## Exploratory Data Analysis (EDA):
 
 Data Cleaning:
 For this project, only the transcription and medical_specialty columns are retained. All other columns are removed. The dataset contains 33 missing values in the medical_specialty column, which have been filled with the label 'unknown'.
