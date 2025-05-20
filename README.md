@@ -4,7 +4,7 @@
 
 The primary objective of this project is to develop a machine learning model capable of accurately predicting the medical specialty associated with a given medical transcription. While a publicly available dataset is being used for initial development and learning the process, the final models will be applied to classified company data that cannot be publicly shared. This ensures privacy compliance while supporting internal implementation. 
 
-Link to Jupiter notebook: https://github.com/MRiDeb/Text-Classification/blob/main/Text_Classification1.ipynb
+**Jupyter notebook** [Text_Classification.ipynb](https://github.com/MRiDeb/Text-Classification/blob/main/Text_Classification.ipynb)
 
 ## Business Objective:
 
