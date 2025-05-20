@@ -45,3 +45,9 @@ XGBoost
 BERT with HuggingFace Transformers -  This is failing, may need help with this. 
 
 We'll also compare results using accuracy, F1-score, precision, and recall.
+
+
+![image](https://github.com/user-attachments/assets/1e318900-7389-4abc-b4ad-231451a1d2bc)
+
+![image](https://github.com/user-attachments/assets/de67783e-ace4-40f7-a15e-bb6994dc10fe)
+
