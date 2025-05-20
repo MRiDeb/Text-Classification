@@ -31,7 +31,8 @@ Initial steps included lowercasing, removal of punctuation, and elimination of s
 ### Feature Extraction
 Convert text into numerical format using TF-IDF Vectorization.
 
-### Baseline Model
+## Baseline Model
+
 Using Logistic Regression as baseline model, we see that accuracy is at 28%
 
 ## Multiple models tested to compare accuracy before sampling. 
@@ -93,6 +94,7 @@ The goal was to leverage its understanding of clinical language to improve accur
 
 However, despite its domain-specific training, Bio_ClinicalBERT underperformed compared to traditional models enhanced by random oversampling. This suggests that data balance and task-specific tuning play a more critical role than model complexity alone in this context.
 
+
 ---
 ### Training Progress
 
@@ -122,6 +124,12 @@ metrics={
 - **Validation F1 Score**: `0.2482`
 
 Despite being domain-specific, Bio_ClinicalBERT did not outperform traditional models enhanced by random oversampling.
+
+---
+
+### Saving and Loading Fine-Tuned BERT Model
+
+The fine-tuned BERT model and tokenizer were successfully saved to disk to enable reuse without the need for retraining. This ensures efficient deployment and scalability for inference tasks. The saved model and tokenizer were later loaded to perform predictions on new and unseen data. This process confirmed that the model retained its fine-tuned performance and was able to make accurate predictions consistently.
 
 ---
 
