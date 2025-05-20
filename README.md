@@ -65,7 +65,7 @@ SMOTE generating synthetic examples that don't generalize well for these models.
 
 Models struggling with overfitting to synthetic samples that don't capture the true distribution.
 
-## Multiple Models using Random Over sampling.
+## Multiple Models using Random Oversampling.
 
 ![image](https://github.com/user-attachments/assets/de67783e-ace4-40f7-a15e-bb6994dc10fe)
 
@@ -104,17 +104,16 @@ However, despite its domain-specific training, Bio_ClinicalBERT underperformed c
 | 1000     | 2.9984         |
 | Final    | 2.9559         |
 
-TrainOutput(
-global_step=1479,
-training_loss=2.9559,
-metrics={
-'train_runtime': 8024.14,
-'train_samples_per_second': 1.474,
-'train_steps_per_second': 0.184,
-'epoch': 3.0
-}
-)
 
+
+```plaintext
+TrainOutput(global_step=1479, training_loss=2.9559, metrics={
+    'train_runtime': 8024.14,
+    'train_samples_per_second': 1.474,
+    'train_steps_per_second': 0.184,
+    'epoch': 3.0
+})
+```
 
 ---
 
